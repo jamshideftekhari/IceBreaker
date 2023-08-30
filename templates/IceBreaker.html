@@ -1,0 +1,23 @@
+{%extends "layoutBS.html"%}
+{%block content%}
+<h1>IceBreaker</h1> 
+<p style="text-align: right;">
+<script src="https://cdn.logwork.com/widget/digital.js"></script>
+<a href="https://logwork.com/current-time-in-copenhagen-denmark-hovedstaden" class="digital-clock" data-style="round" data-size="400" data-timezone="Europe/Copenhagen" data-language="en">Current time in Copenhagen, Denmark</a>
+</p>
+
+<a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/cph/" data-label_1="COPENHAGEN" data-label_2="WEATHER" data-theme="original" >COPENHAGEN WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+<p id="date"></p>
+
+<img src="static/images/contexr.png" alt="context" width="500" height="500">
+<!-- <script>
+     document.getElementById("date").innerHTML = Date();    
+</script>
+<script src="https://cdn.logwork.com/widget/text.js"></script>
+<a href="https://logwork.com/current-time-in-copenhagen-denmark-hovedstaden" class="clock-widget-text" data-timezone="Europe/Copenhagen" data-language="en">Copenhagen, Denmark</a>
+ -->
+{%endblock content%}
